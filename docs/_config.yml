@@ -1,0 +1,36 @@
+title: Speakfect
+description: Speakfect — your personal speech coach. Privacy Policy and Terms of Service.
+url: https://speakfect.ai
+
+# Use a clean built-in theme; safe for GitHub Pages without local builds.
+theme: jekyll-theme-cayman
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Only the public-facing docs are served. Everything else under /docs is
+# internal product documentation and must not be published. If you add a
+# new public file, also add it to the `include:` allowlist OR move the
+# new internal file into the `exclude:` list.
+exclude:
+  - LAUNCH_MASTER_CHECKLIST.md
+  - launch-verification-checklist.md
+  - deployment-runbook.md
+  - security-report.md
+  - app-store-privacy-answers.md
+  - privacy-policy-app-store.md
+  - runbooks
+  - runbooks/
+  - patent
+  - patent/
+  - "*.draft.md"
+  - "README.md"
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
